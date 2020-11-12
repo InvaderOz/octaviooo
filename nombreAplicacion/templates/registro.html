@@ -1,0 +1,330 @@
+<html>
+	<head>
+		<title>Trueno Fingerboard</title>
+		<meta charset="utf-8">
+        <link rel="icon" type="img/png" href="https://media.discordapp.net/attachments/674775571426967553/775857374996332554/icon2.png?width=120&height=120">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>		
+		<script src="JavaScript.js"></script>
+	</head>
+    <body>
+	<div align="center"><img src=https://media.discordapp.net/attachments/727749219221504043/758093582065336330/Sin_titulo-1.jpg?width=864&height=280
+</div>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">
+				<img src="https://cdn.discordapp.com/attachments/674775571426967553/775857374996332554/icon2.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+					Trueno Fingerboard
+					</a>
+				</a>
+				
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="inicio ">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Productos
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="deck ">Decks</a>
+                        <a class="dropdown-item" href="trucks ">Trucks</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">SALE(Proximamente)</a>
+                      </div>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <a class="nav-link" href=" login "> login <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href=" registro ">Registrarse <span class="sr-only">(current)</span></a>
+                  </form>
+                  </div>				
+			</nav>
+			<br><br>
+			<div class="row justify-content-center">
+				<h2> registro</h2>
+			</div>
+			<br><br>
+			<form action="registrar " method="post">
+				<div class="row">
+					<div class="col-12 col-md-1 offset-md-4">
+						Email
+					</div>
+					<div class="col-12 col-md-5 col-xl-3">
+						<input type="text" name="txtEmail" class="txtEmail form-control" 
+															placeholder="usuario@ejemplo.cl" required>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-12 col-md-1 offset-md-4">
+						Rut
+					</div>
+					<div class="col-12 col-md-5 col-xl-3">
+						<input type="text" name="txtRut" class="txtRut form-control" 
+															placeholder="Ej: 12345678-0" minlength="10" required>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-12 col-md-1 offset-md-4">
+						Nombre Completo:
+					</div>
+					<div class="col-12 col-md-5 col-xl-3">
+						<input type="text" name="txtNombre" class="txtNombre form-control" 
+															placeholder="" required>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-12 col-md-1 offset-md-4">
+						Fecha de Nacimiento:
+					</div>
+					<div class="col-12 col-md-5 col-xl-3">
+						<input type="date" name="txtFechaNac" class="txtFechaNac form-control" required>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-12 col-md-1 offset-md-4">
+						Telefono:
+					</div>
+					<div class="col-12 col-md-5 col-xl-3">
+						<input type="number" name="txtTelefono" class="txtTelefono form-control" placeholder="Ej: 987456123" minlength="9" required>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-12 col-md-1 offset-md-4">
+						Region:
+					</div>
+					<div class="form-group col-md-3">
+				      	<select id="inputState" name="cmbRegion"class="cmbRegion form-control" required>
+				        	<option value="">--Seleccione una region--</option>
+				        	<option>I Región de Tarapacá</option>
+				        	<option>II Región de Antofagasta</option>
+				        	<option>III Región de Atacama</option>
+				        	<option>IV Región de Coquimbo</option>
+				        	<option>V Región de Valparaíso</option>
+				        	<option>VI Región del Libertador General Bernardo O’Higgins</option>
+				        	<option>VII Región del Maule</option>
+				        	<option>VIII Región del Biobío</option>
+				        	<option>IX Región de La Araucanía</option>
+				        	<option>X Región de Los Lagos</option>
+				        	<option>XI Región Aysén del General Carlos Ibáñez del Campo</option>
+				        	<option>XII Región de Magallanes y Antártica Chilena</option>
+				        	<option>XIII Región Metropolitana de Santiagos</option>
+				        	<option>XIV Región de Los Ríos</option>
+				        	<option>XV Región de Arica y Parinacota</option>
+				        	<option>XVI Región de Ñuble</option>
+				      </select>
+				    </div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-12 col-md-1 offset-md-4">
+						Ciudad
+					</div>
+					<div class="form-group col-md-3">
+				      	<select id="inputState" name="cmbCiudad" class="cmbCiudad form-control" required>
+				        	<option value="">--Seleccione una ciudad--</option>
+				        	<option>Santiago</option>
+				        	<option>Valparaíso</option>
+				        	<option>Concepción</option>
+				        	<option>La Serena</option>
+				        	<option>Antofagasta</option>
+				        	<option>Temuco</option>
+				        	<option>Iquique</option>
+				        	<option>Rancagua</option>
+				        	<option>Puerto Montt</option>
+				        	<option>Talca</option>
+				        	<option>Arica</option>
+				        	<option>Chillán</option>
+				        	<option>Copiapó</option>
+				        	<option>Coronel</option>
+				        	<option>Lota</option>
+				        	<option>Calama</option>
+				        	<option>Valdivia</option>
+				        	<option>Quillota</option>
+				        	<option>Osorno</option>
+				        	<option>Los Ángeles</option>
+				        	<option>Curicó</option>
+				        	<option>Punta Arenas</option>
+				        	<option>San Antonio</option>
+				        	<option>Ovalle</option>
+				        	<option>Colina</option>
+				        	<option>Peñaflor</option>
+				        	<option>Linares</option>
+				        	<option>Melipilla</option>
+				        	<option>Los Andes-Calle Larga</option>
+				        	<option>Buin</option>
+				        	<option>San Felipe</option>
+				        	<option>San Fernando</option>
+				        	<option>Talagante</option>
+				        	<option>Limache-Olmué</option>
+				        	<option>Coyhaique</option>
+				      </select>
+				    </div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-12 col-md-1 offset-md-4">
+						Clave
+					</div>
+					<div class="col-12 col-md-5 col-xl-3">
+						<input type="password" name="txtClave" class="txtClave form-control" required>
+					</div>
+				</div>
+				<br><br>
+				<div class="row">
+					<div class="col-12 col-md-1 offset-md-4 offset-xl-5 ">
+					</div>
+					<div class="col-12 col-md-3">
+						<input type="reset" name="btnLimpiar" class="btnLimpiar btn btn-dark" value="Limpiar">
+						<input type="submit" name="btnEnviar" class="btnEnviar btn btn-dark"  value="Enviar">
+					</div>
+				</div>
+			</form>
+		</div>
+					<br>
+		</br>
+			<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark">
+
+  <div style="background-color: #6351ce;">
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+          <h6 class="mb-0">Contactanos en Nuestras redes sociales</h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f white-text mr-4"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter white-text mr-4"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g white-text mr-4"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in white-text mr-4"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram white-text"> </i>
+          </a>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+  </div>
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">Trueno Fingerboards</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>Productos originales, de calidad y hechos a mano, dedicados a la escena chilena del fingerboard.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Productos</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="deck ">Decks</a>
+        </p>
+        <p>
+          <a href="trucks ">Trucks</a>
+        </p>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Links Utiles</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href=" login ">Iniciar Sesion</a>
+        </p>
+        <p>
+          <a href=" registro ">Registrarse</a>
+        </p>
+        <p> 
+          <a href=" loginadmin ">Administrador</a>
+        </p>		
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Contacto</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <i class="fas fa-home mr-3"></i> Padre Orellana 1256, Santiago, Región Metropolitana </p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i> truenofingerboards@gmail.com</p>
+        <p>
+          <i class="fas fa-phone mr-3"></i> +56 9 789 890 22</p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="inicio "> Trueno Fingerboards</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+	</body>
+</html>
+</html>
+	</body>
+</html>
